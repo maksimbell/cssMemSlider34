@@ -19,12 +19,15 @@ input {
 }
 
 h1 {
+    margin-top: 50px;
     font-size: 20px;
+    color: white;
+    text-align: center;
     font-family: 'Courier New', Courier, monospace;
 }
 
 .slider {
-    margin-top: 200px;
+    margin-top: 100px;
     width: inherit;
     height: inherit;
 }
@@ -60,8 +63,12 @@ h1 {
 }
 
 .bullets {
-    margin-top: 100px;
-    float: right;
+    position: relative;
+    top: 100px;
+    text-align: center;
+    /* align-self: center; */
+    /* margin-top: 100px; */
+    /* float: right; */
 }
 
 
@@ -73,7 +80,6 @@ h1 {
     position: relative;
     width: 8px;
     border-radius: 50%;
-    transition: background ease-in-out .5s;
 }
 
 .container label:after {
