@@ -1,9 +1,75 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+input{
+    display: none;
+}
+
 .container{
     margin: 0 auto;
-    width: 1920px;
+    width: 800px;
+    height: 400px;
 }
 
 h1{
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
+}
+
+.slider{
+    width: 500px;
+    height: 300px;
+}
+
+.slide{
+    position: absolute;
+    height: 400px;
+    width: 800px;
+}
+
+.slide1{
+    background-image: url(assets/img/slide1.jpg);
+}
+
+.slide2{
+    background-image: url(assets/img/slide2.jpg);
+}
+
+.slide3{
+    background-image: url(assets/img/slide3.png);
+}
+
+.slide4{
+    background-image: url(assets/img/slide4.jpg);
+}
+
+.bullets{
+    float: right;
+}
+
+
+.container label {
+	cursor: pointer;
+	display: inline-block;
+	height: 8px;
+	margin: 25px 12px 0 16px;
+	position: relative;
+	width: 8px;
+	border-radius: 50%;
+}
+
+.container label:after {
+	border: 2px solid #ddd;
+	content: " ";
+	display: block;
+	height: 12px;
+	left: -4px;
+	position: absolute;
+	top: -4px;
+	width: 12px;
+    border-radius: 50%;
 }
